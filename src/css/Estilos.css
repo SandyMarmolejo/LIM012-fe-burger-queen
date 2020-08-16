@@ -26,24 +26,39 @@
   height: 90px;
   left: 600px;
   top: 150px;
+  font-size: 28px;
   background: #EAE2B7;
   border: 2px solid #000000;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 22px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 28px;
   font-weight: bold;
   margin-top: 25px;
 }
 
+@media (min-width: 768px) and (orientation: portrait) {
+  .home-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .home-logo {
+    justify-content: center;
+  }
+
+  .logo-queen {
+    width: 90%;
+    height: 90%;
+  }
+}
 .nav-wrapper {
   position: fixed;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: #3B1C14;
+  background-color: #3b1c14;
 }
 .nav-wrapper nav {
   width: 100%;
@@ -57,7 +72,7 @@
   font-weight: bold;
   text-decoration: none;
   font-size: 40px;
-  color: white;
+  color: #ffffff;
   margin: 30px;
 }
 
@@ -96,7 +111,7 @@ nav {
   display: flex;
   background: #3b1c14;
   width: 100%;
-  height: 80px;
+  height: 75px;
   display: inline-flex;
   opacity: 0.9;
 }
@@ -105,8 +120,8 @@ nav {
 }
 
 .logo {
-  width: 24%;
-  margin-top: 5px;
+  width: 25%;
+  margin-top: 3px;
 }
 
 .nav-order {
@@ -117,7 +132,7 @@ nav {
   width: 100%;
   font-size: 38px;
   color: #ffffff;
-  margin-top: 2.5%;
+  margin-top: 2.2%;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -148,7 +163,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 2px;
 }
 
 .btns-menu {
@@ -157,20 +172,20 @@ nav {
   height: 60px;
   left: 600px;
   top: 150px;
+  font-size: 28px;
   background: #f2c87b;
   border: 3px solid #000000;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 22px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 28px;
   font-weight: bold;
   margin-top: 25px;
   outline: none;
   cursor: pointer;
 }
 .btns-menu:hover {
-  background-color: #3B1C14;
+  background-color: #3b1c14;
   color: #ffffff;
   border: 3px solid #ffffff;
 }
@@ -179,10 +194,9 @@ nav {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 1px;
 }
-
-.sub-order-btns > div {
+.sub-order-btns div {
   margin: 6px;
   text-align: center;
 }
@@ -193,21 +207,20 @@ nav {
   height: 45px;
   left: 600px;
   top: 150px;
+  font-size: 18px;
   background: #f2c87b;
   border: 3px solid #000000;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 22px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 18px;
   font-weight: bold;
   margin-top: 25px;
   outline: none;
   cursor: pointer;
 }
-
 .btns-bonus:hover {
-  background-color: #3B1C14;
+  background-color: #3b1c14;
   color: #ffffff;
   border: 3px solid #ffffff;
 }
@@ -217,18 +230,36 @@ nav {
   display: grid;
   grid-template-columns: 50% 50%;
   margin: 5%;
+  margin-top: 95px;
   gap: 2em;
 }
 
 .breakfast-menu {
   width: 100%;
-  height: 85%;
+  height: 60%;
   border-radius: 30px;
-  background-color: white;
+  background-color: #ffffff;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  box-shadow: 20px 20px 14px #3B1C14;
+  grid-auto-rows: 230px;
+  box-shadow: 20px 20px 14px #3b1c14;
+  overflow: auto;
+}
+.breakfast-menu::-webkit-scrollbar {
+  width: 15px;
+}
+.breakfast-menu::-webkit-scrollbar-thumb {
+  background-color: #f2c87b;
+  border-radius: 20px;
+  border: 1.5px solid #3b1c14;
+}
+.breakfast-menu::-webkit-scrollbar-thumb:hover {
+  background-color: #b78856;
+  border: 1px solid #EAE2B7;
+}
+.breakfast-menu::-webkit-scrollbar-thumb:active {
+  background-color: #3b1c14;
+  border: 1px solid #EAE2B7;
 }
 
 .breakfast-item {
@@ -254,7 +285,7 @@ nav {
   cursor: pointer;
 }
 .btn-add:hover {
-  background-color: #6e3729;
+  background-color: #3b1c14;
   color: #ffffff;
   border: 2px solid #ffffff;
 }
@@ -263,11 +294,24 @@ nav {
   width: 100%;
   height: 60%;
   border-radius: 30px;
-  background-color: white;
-}
-
-.scroll {
+  background-color: #ffffff;
   overflow: auto;
+}
+.breakfast-ticket::-webkit-scrollbar {
+  width: 15px;
+}
+.breakfast-ticket::-webkit-scrollbar-thumb {
+  background-color: #f2c87b;
+  border-radius: 20px;
+  border: 1.5px solid #3b1c14;
+}
+.breakfast-ticket::-webkit-scrollbar-thumb:hover {
+  background-color: #b78856;
+  border: 1px solid #EAE2B7;
+}
+.breakfast-ticket::-webkit-scrollbar-thumb:active {
+  background-color: #3b1c14;
+  border: 1px solid #EAE2B7;
 }
 
 .ticket-header {
@@ -293,41 +337,41 @@ nav {
 .menu-btns-active {
   display: flex;
   justify-content: space-around;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
-.btn-accept {
+#confirm {
   padding: 3px;
   width: 170px;
   height: 45px;
   background: #40916C;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   box-shadow: 0px 4px 4px #40916C;
   border-radius: 22px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
   outline: none;
   cursor: pointer;
 }
-.btn-accept:hover {
+#confirm:hover {
   background-color: #0b3f28;
   opacity: 0.9;
 }
 
-.btn-cancel {
+#cancel {
   padding: 3px;
   width: 170px;
   height: 45px;
   background: #D0302A;
-  border: 1px solid #FFFFFF;
-  box-shadow: 0px 4px 4px #D62020;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 4px 4px #D0302A;
   border-radius: 22px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
   outline: none;
   cursor: pointer;
 }
-.btn-cancel:hover {
+#cancel:hover {
   background-color: #720b08;
   opacity: 0.9;
 }
@@ -344,7 +388,7 @@ nav {
   margin: 50px auto;
   justify-content: center;
   background: rgba(59, 28, 20, 0.97);
-  border: 2px solid #eae2b7;
+  border: 2px solid #EAE2B7;
   box-sizing: border-box;
 }
 
@@ -353,7 +397,7 @@ nav {
   height: 471px;
   left: 42px;
   top: 86px;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .container-deliver {
@@ -368,7 +412,7 @@ nav {
   margin: 50px auto;
   justify-content: center;
   background: rgba(59, 28, 20, 0.97);
-  border: 2px solid #eae2b7;
+  border: 2px solid #EAE2B7;
   box-sizing: border-box;
 }
 
@@ -377,7 +421,7 @@ nav {
   height: 471px;
   left: 42px;
   top: 86px;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 * {
@@ -391,6 +435,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   font-family: sans serif;
   font-size: 18px;
 }

@@ -1,0 +1,79 @@
+// == PALETA == //
+$white: #ffffff;
+$beige: #EAE2B7;
+$light-brown: #f2c87b;
+$mediun-brown: #b78856;
+$red: #D0302A;
+$dark-red: #720b08;
+$green: #40916C;
+$dark-green: #0b3f28;
+$brown: #3b1c14;
+$black: #000000;
+
+
+// == TAMAÑO DE LETRA ==//
+$title: 38px;
+
+
+// == MIXIN == //
+@mixin base_buttons {
+  background: $light-brown;
+  border: 3px solid $black;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 22px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  margin-top: 25px;
+  outline: none;
+  cursor: pointer;
+}
+
+@mixin buttons_database ($color, $dark-color) {
+    padding: 3px;
+    width: 170px;
+    height: 45px;
+    background: $color;
+    border: 1px solid $white;
+    box-shadow: 0px 4px 4px $color;
+    border-radius: 22px;
+    color: $white;
+    text-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $dark-color;
+        opacity: 0.9;
+      }
+}
+
+
+@mixin scroll {
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 15px;   
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $light-brown;
+    border-radius: 20px;
+    border: 1.5px solid $brown;
+
+    &:hover {
+      background-color: $mediun-brown;
+      border: 1px solid $beige
+    }
+
+    &:active {
+      background-color: $brown;
+      border: 1px solid $beige
+    }
+  }
+
+  // &::-webkit-scrollbar-track:active {
+  //   background: $beige;
+  //   border-radius: 20px;
+  // }
+}

@@ -4,9 +4,9 @@ nav {
   
   .nav-toolbar {
     display: flex;
-    background: #3b1c14;
+    background: $brown;
     width: 100%;
-    height: 80px;
+    height: 75px;
     display: inline-flex;
     opacity: 0.9;
 
@@ -16,8 +16,8 @@ nav {
   }
   
   .logo {
-    width: 24%;
-    margin-top: 5px;
+    width: 25%;
+    margin-top: 3px;
   }
 
   .nav-order {
@@ -26,9 +26,9 @@ nav {
     
     h1 {
         width: 100%;
-        font-size: 38px;
-        color: #ffffff;
-        margin-top: 2.5%;
+        font-size: $title;
+        color: $white;
+        margin-top: 2.2%;
         font-family: Georgia, 'Times New Roman', Times, serif;
     }
   }
@@ -41,7 +41,7 @@ nav {
         width: 100%;
         font-size: 20px;
         margin-left: 22%;
-        color: #EAE2B7;
+        color: $beige;
         margin-top: 10%;
         font-family: Georgia, 'Times New Roman', Times, serif;
     }

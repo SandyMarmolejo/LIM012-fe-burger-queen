@@ -1,10 +1,11 @@
-@import "../pages/Home.scss";
-@import "../components/styleComponents/MenuBurger.scss";
-@import "../components/styleComponents/NavBar.scss";
-@import "../components/styleComponents/Product.scss";
-@import "../components/styleComponents/Summary.scss";
-@import "../components/styleComponents/OrdersChef.scss";
-@import "../components/styleComponents/DeliverWaiter.scss";
+@import "./styleComponents/Globals";
+@import "./styleComponents/Home";
+@import "./styleComponents/MenuBurger";
+@import "./styleComponents/NavBar";
+@import "./styleComponents/Product";
+@import "./styleComponents/Summary";
+@import "./styleComponents/OrdersChef";
+@import "./styleComponents/DeliverWaiter";
 
 * {
 	margin: 0;
@@ -17,6 +18,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     font-family: sans serif;
     font-size: 18px;
 } 

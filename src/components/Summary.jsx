@@ -78,7 +78,7 @@ function Summary(props) {
 
   return (
     <div className="">
-      <div className="breakfast-ticket scroll">
+      <div className="breakfast-ticket">
 
         <div className="ticket-header">
           <div className="">
@@ -145,8 +145,8 @@ function Summary(props) {
 
       </div>
       <div className="menu-btns-active">
-        <button className="btn-accept" onClick={handleAddOrder}>CONFIRMAR</button>
-        <button className="btn-cancel" onClick={btnCancel}>CANCELAR</button>
+        <button id="confirm" onClick={handleAddOrder}>CONFIRMAR</button>
+        <button id="cancel" onClick={btnCancel}>CANCELAR</button>
       </div>
     </div>
   );
