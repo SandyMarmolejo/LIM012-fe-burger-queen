@@ -42,6 +42,8 @@
   },
   "devDependencies": {
     "eslint-config-airbnb": "^18.2.0",
+    "firebase-mock": "^2.3.2",
+    "mock-cloud-firestore": "^0.12.0",
     "react-test-renderer": "^16.13.1"
   }
 }

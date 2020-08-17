@@ -2,6 +2,7 @@ import React from 'react';
 import moment from 'moment';
 import 'moment/locale/es';
 import swal from 'sweetalert';
+import { getOrder } from '../controller/orders';
 import firebase from '../firebase/firebase';
 import deleteOrder from '../controller/ordersChef';
 
@@ -9,17 +10,10 @@ function OrdersChef() {
   const [orders, getOrders] = React.useState([]);
 
   React.useEffect(() => {
-    const confirmedOrders = firebase.firestore().collection('pedidos');
-    confirmedOrders
-      .orderBy('hourSend', 'desc')
-      .onSnapshot({ includeMetadataChanges: true }, ((snap) => {
-        const gettingOrders = snap.docs.map((doc) => ({
-          id: doc.id,
-          ...doc.data(),
-        }));
-
-        getOrders(gettingOrders);
-      }));
+    getOrder((elements) => {
+      getOrders(elements);
+      // console.log(elements);
+    });
   }, []);
 
   const completeOrder = (orderId) => {

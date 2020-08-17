@@ -1,12 +1,17 @@
 /* eslint-disable no-console */
 import firebase from '../firebase/firebase';
 
-const addOrder = async (newOrder) => {
-  try {
-    await firebase.firestore().collection('pedidos').add(newOrder);
-  } catch (error) {
-    console.log(error);
-  }
-};
+const addOrder = (newOrder) => firebase.firestore().collection('pedidos').add(newOrder);
 
-export default addOrder;
+const getOrder = (callback) => firebase.firestore().collection('pedidos')
+  .orderBy('hourSend', 'desc')
+  .onSnapshot({ includeMetadataChanges: true }, ((snap) => {
+    const gettingOrders = snap.docs.map((doc) => ({
+      id: doc.id,
+      ...doc.data(),
+    }));
+
+    callback(gettingOrders);
+  }));
+
+export { addOrder, getOrder };

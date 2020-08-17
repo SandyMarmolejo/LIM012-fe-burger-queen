@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 /* eslint-disable max-len */
 import React from 'react';
-import addOrder from '../controller/orders';
+import { addOrder } from '../controller/orders';
 import Clock from './Clock';
 import iconMore from '../images/icon_more.png';
 import iconLess from '../images/icon_less.png';
@@ -115,8 +115,8 @@ function Summary(props) {
               {
                 props.summary.map((item, i) => (
                   <tr key={item.idProduct} id={item.idProduct}>
-                    <th scope="col"><button onClick={() => btnMore(item)}><img src={iconMore} alt="" /></button></th>
-                    <th scope="col"><button onClick={() => btnLess(item)}><img src={iconLess} alt="" /></button></th>
+                    <th scope="col"><button className="no-style" onClick={() => btnMore(item)}><img src={iconMore} alt="" /></button></th>
+                    <th scope="col"><button className="no-style" onClick={() => btnLess(item)}><img src={iconLess} alt="" /></button></th>
                     <th scope="col"><p className="">{item.countProduct}</p></th>
                     <th scope="col">{item.nameProduct}</th>
                     <th scope="col">
@@ -127,7 +127,7 @@ function Summary(props) {
                       S/
                       {item.priceProduct * item.countProduct}
                     </th>
-                    <th scope="col"><button id={i} onClick={deleteItem}><img src={iconDelete} alt="" /></button></th>
+                    <th scope="col"><button className="no-style" id={i} onClick={deleteItem}><img src={iconDelete} alt="" /></button></th>
                   </tr>
                 ))
               }

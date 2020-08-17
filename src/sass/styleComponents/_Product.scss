@@ -3,6 +3,8 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 2px;
+  height: 165px;
+  
 }
 
 .btns-menu {
@@ -24,11 +26,10 @@
 .sub-order-btns {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
-  margin-top: 1px;
+  margin-bottom: 1%;
 
   div {
-    margin: 6px;
+    margin: 1px;
     text-align: center;
   }
 }
@@ -55,8 +56,8 @@
   height: 100vh;
   display: grid;
   grid-template-columns: 50% 50%;
-  margin: 5%;
-  margin-top: 95px;
+  margin-left: 1.5%;
+  margin-right: 5%;
   gap: 2em;
 }
 

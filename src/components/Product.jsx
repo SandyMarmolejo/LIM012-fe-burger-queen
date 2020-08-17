@@ -15,11 +15,11 @@ function Product() {
       .then((datos) => {
         setData(datos.Menu);
       });
-  }, []);
+  });
 
-  const selecType = (type, subType) => {
-    setType(type);
-    setSubType(subType);
+  const selecType = (typee, subTypee) => {
+    setType(typee);
+    setSubType(subTypee);
   };
 
   const addProducto = (item) => {
