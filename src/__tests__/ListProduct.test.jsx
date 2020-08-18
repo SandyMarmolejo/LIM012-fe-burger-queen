@@ -1,5 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
+import fetchMock from 'fetch-mock';
 import Product from '../components/Product';
 
 const product = {
@@ -24,6 +25,8 @@ const product = {
     },
   ],
 };
+
+fetchMock.get('../menuList.json', { product });
 
 describe('Product', () => {
   test('Debería mostrarse el nombre del producto en el documento', () => {
