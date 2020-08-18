@@ -2,7 +2,7 @@
 import React from 'react';
 import swal from 'sweetalert';
 import firebase from '../firebase/firebase';
-import deliverOrder from '../controller/deliverWaiter';
+import deliverOrder from '../controller/ordersWaiter';
 
 function DeliverWaiter() {
   const [orders, getOrders] = React.useState([]);

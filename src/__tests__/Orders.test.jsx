@@ -1,17 +1,6 @@
 import MockFirebase from 'mock-cloud-firestore';
 import { addOrder, getOrder } from '../controller/orders';
 
-// import React from 'react';
-// import { render, screen } from '@testing-library/react';
-// import Product from '../components/Product';
-
-// test('renders the correct content', async () => {
-//   render(<Product />);
-//   const bntAdd = await screen.findByRole('button');
-
-//   expect(bntAdd.textContent).toBe('Agregar');
-// });
-
 const fixtureData = {
   __collection__: {
     pedidos: {
@@ -24,17 +13,6 @@ const fixtureData = {
           hourSend: '',
           hourEnd: '',
           timeToCook: '',
-          // client: 'Cliente Uno',
-          // numberTable: '1',
-          // status: 'ready',
-          // timeToCook: '',
-          // hourEnd: '',
-          // hourSend: '',
-          // products: {
-          //   idProduct: 'b1',
-          //   nameProduct: 'Café americano',
-          //   priceProduct: '5',
-          //   countProduct: '1',
         },
       },
     },
@@ -65,9 +43,3 @@ describe.only('addOrder', () => {
       // console.log(callback);
     }));
 });
-
-// it('works with async/await', async () => {
-//   expect.assertions(1);
-//   const data = await user.getUserName(4);
-//   expect(data).toEqual('Mark');
-// });
