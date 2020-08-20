@@ -11,10 +11,17 @@ function Product() {
   // Lee los datos alojados en menuList.json
   useEffect(() => {
     fetch('../menuList.json')
-      .then((response) => response.json())
+      .then((response) => {
+        try {
+          response.json();
+        } catch (e) {
+          Promise.reject(new Error('No se encontró los productos'));
+        }
+      })
       .then((datos) => {
         setData(datos.Menu);
-      });
+      })
+      .catch(() => new Error('No se encontró el archivo'));
   });
 
   const selecType = (typee, subTypee) => {
