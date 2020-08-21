@@ -12,7 +12,6 @@ function OrdersChef() {
   React.useEffect(() => {
     getOrder((elements) => {
       getOrders(elements);
-      // console.log(elements);
     });
   }, []);
 
@@ -23,25 +22,6 @@ function OrdersChef() {
       timeToCook: new Date().getTime() - orders.find((o) => o.id === orderId).hourSend,
     });
   };
-
-  // const deleteOrder = async (id) => {
-  //   swal({
-  //     title: '¿Estas seguro que quieres eliminar este pedido?',
-  //     icon: 'warning',
-  //     buttons: true,
-  //     dangerMode: true,
-  //   })
-  //     .then((willDelete) => {
-  //       if (willDelete) {
-  //         swal('Pedido eliminado con exito!', {
-  //           icon: 'success',
-  //         });
-  //         firebase.firestore().collection('pedidos').doc(id).delete();
-  //       } else {
-  //         swal('Continue');
-  //       }
-  //     });
-  // };
 
   const handleDeleteOrder = (removeOrder) => {
     swal({

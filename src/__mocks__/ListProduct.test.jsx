@@ -1,8 +1,7 @@
+/* eslint-disable max-len */
 import React from 'react';
 import { render, screen, waitForElement } from '@testing-library/react';
-// import fetchMock from 'fetch-mock';
 import Product from '../components/Product';
-// import fetch from '../__mocks__/index';
 
 const product = {
   Menu: [
@@ -27,11 +26,6 @@ const product = {
   ],
 };
 
-// fetchMock.get('../menuList.json')
-//   .then((data) => {
-//     console.log(data);
-//   });
-
 // Para peticiones y consultas se mockea, cuando usamos fetch, axios, ajax
 global.fetch = jest.fn(() => Promise.resolve({
   json: () => Promise.resolve(product),
@@ -45,10 +39,6 @@ beforeEach(() => {
 describe('Product', () => {
   test('Debería mostrarse el nombre del producto en el documento', () => {
     render(<Product />);
-
-    // expect(screen.getByText('Café americano')).toBeInTheDocument();
-    // expect(screen.getByText('Jugo de fruta natural')).toBeInTheDocument();
-    // expect(screen.queryAllBy('breakfast-item')).toHaveLength(2);
     waitForElement(() => screen.queryAllBy('breakfast-item')).then((listNode) => {
       expect(listNode.children).toHaveLength(2);
     });

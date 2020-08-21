@@ -53,7 +53,6 @@ function Summary(props) {
   };
 
   // Enviando el pedido a Firebase
-
   const handleAddOrder = () => {
     if (!name.trim() || !table.trim()) {
       console.log('Campo(s) vacio(s). Verifique');
