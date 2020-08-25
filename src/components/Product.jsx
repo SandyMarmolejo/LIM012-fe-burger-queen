@@ -13,9 +13,9 @@ function Product() {
     fetch('../menuList.json')
       .then((response) => {
         try {
-          response.json();
+          return response.json();
         } catch (e) {
-          Promise.reject(new Error('No se encontró los productos'));
+          return Promise.reject(new Error('No se encontró los productos'));
         }
       })
       .then((datos) => {
