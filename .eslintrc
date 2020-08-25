@@ -1,0 +1,10 @@
+{
+    "extends": ["react-app", "airbnb", "plugin:jsx-a11y/recommended"],
+    "plugins": ["jsx-a11y"],
+    "rules": {
+      "react/jsx-filename-extension": [1, { "extensions": [".jsx"] }],
+      "react/button-has-type": ["off",{"button": true}],
+      "react/destructuring-assignment":0,
+      "react/prop-types": 0
+    }
+  }

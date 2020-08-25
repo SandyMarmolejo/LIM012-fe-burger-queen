@@ -1,0 +1,166 @@
+{
+  "Menu": [
+    {
+      "id": "b1",
+      "name": "Café americano",
+      "price": 5,
+      "count": 1,
+      "type": "breakfast",
+      "subType": "",
+      "image": "coffee.jpg"
+    },
+    {
+      "id": "b2",
+      "name": "Café con leche",
+      "price": 7,
+      "count": 1,
+      "type": "breakfast",
+      "subType": "",
+      "image": "latte.jpg"
+    },
+    {
+      "id": "b3",
+      "name": "Sandwich de jamón y queso",
+      "price": 10,
+      "count": 1,
+      "type": "breakfast",
+      "subType": "",
+      "image": "sandwich.jpg"
+    },
+    {
+      "id": "b4",
+      "name": "Jugo de fruta natural",
+      "price": 7,
+      "count": 1,
+      "type": "breakfast",
+      "subType": "",
+      "image": "juice.jpg"
+    },
+    {
+      "id": "l10",
+      "name": "Hamburguesa simple res",
+      "price": 10,
+      "count": 1,
+      "type": "lunch",
+      "subType": "burger",
+      "image": "burgerSimple.jpg"
+    },
+    {
+      "id": "l11",
+      "name": "Hamburguesa doble res",
+      "price": 15,
+      "count": 1,
+      "type": "lunch",
+      "subType": "burger",
+      "image": "burgerDouble.jpg"
+    },
+    {
+      "id": "l12",
+      "name": "Hamburguesa simple pollo",
+      "price": 10,
+      "count": 1,
+      "type": "lunch",
+      "subType": "burger",
+      "image": "burgerSimple.jpg"
+    },
+    {
+      "id": "l13",
+      "name": "Hamburguesa doble pollo",
+      "price": 15,
+      "count": 1,
+      "type": "lunch",
+      "subType": "burger",
+      "image": "burgerDouble.jpg"
+    },
+    {
+      "id": "l14",
+      "name": "Hamburguesa simple vegetariana",
+      "price": 10,
+      "count": 1,
+      "type": "lunch",
+      "subType": "burger",
+      "image": "burgerSimple.jpg"
+    },
+    {
+      "id": "l15",
+      "name": "Hamburguesa doble vegetariana",
+      "price": 15,
+      "count": 1,
+      "type": "lunch",
+      "subType": "burger",
+      "image": "burgerDouble.jpg"
+    },
+    {
+      "id": "c1",
+      "name": "Papas fritas",
+      "price": 5,
+      "count": 1,
+      "type": "lunch",
+      "subType": "accompaniments",
+      "image": "chips.jpg"
+    },
+    {
+      "id": "c2",
+      "name": "Aros de cebolla",
+      "price": 5,
+      "count": 1,
+      "type": "lunch",
+      "subType": "accompaniments",
+      "image": "onion.jpg"
+    },
+    {
+      "id": "d1",
+      "name": "Agua 500ml",
+      "price": 5,
+      "count": 1,
+      "type": "lunch",
+      "subType": "drinks",
+      "image": "water500.jpg"
+    },
+    {
+      "id": "d2",
+      "name": "Agua 750ml",
+      "price": 7,
+      "count": 1,
+      "type": "lunch",
+      "subType": "drinks",
+      "image": "water750.jpg"
+    },
+    {
+      "id": "d3",
+      "name": "Gaseosa 500ml",
+      "price": 7,
+      "count": 1,
+      "type": "lunch",
+      "subType": "drinks",
+      "image": "soda500.jpg"
+    },
+    {
+      "id": "d4",
+      "name": "Gaseosa 750ml",
+      "price": 10,
+      "count": 1,
+      "type": "lunch",
+      "subType": "drinks",
+      "image": "soda750.jpg"
+    },
+    {
+      "id": "ad1",
+      "name": "Queso",
+      "price": 1,
+      "count": 1,
+      "type": "lunch",
+      "subType": "additional",
+      "image": "cheese.jpg"
+    },
+    {
+      "id": "ad2",
+      "name": "Huevo",
+      "price": 1,
+      "count": 1,
+      "type": "lunch",
+      "subType": "additional",
+      "image": "egg.jpg"
+    }
+  ]
+}
